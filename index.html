@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesh Patel | Front End Software Engineer</title>
+
+    <!--Font awesome icons CDN-->
+    <script src="https://kit.fontawesome.com/78a64c7e06.js" crossorigin="anonymous"></script>
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Peddana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo/no-background/nesh-mini-icon.png">
+</head>
+
+<body id="mainBody" onload="autoOpenFirstExpButtonOnClickContent();">
+    <!--Header Section-->
+    <header class="headerTagContainer">
+        <div class="headerWrapper" id="headerItemsContainer">
+            <!--Self Brand Logo Section-->
+            <div class="headerItem headerLogoItemContainer">
+                <a href="#home"><img id="logo" src="images/logo/nesh-Thumbnail.png" alt="Nesh Patel Logo Image"></a>
+            </div>
+
+            <!--Menu Button Section For Small Screen-->
+
+            <div class="stateOne">
+                <a id="menuClickButton" class="menuButton" onclick="menuButtonState()">
+                    <div class="petaStateOne"> </div>
+                    <div class="petaStateTwo"> </div>
+                </a>
+            </div>
+
+            <!-- Navigation Menu Section-->
+            <div class="headerItem headerMenuItemContainer">
+                <div class="menuLinkContent">
+                    <a id="jumpHome" href="#home" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Introduction</span></a>
+                    <a id="jumpAbout" href="#about" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">About</span></a>
+                    <a id="jumpProjects" href="#projects" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Projects</span></a>
+                    <a id="jumpExperience" href="#experience" class="menu-location" onclick="jumpToSection(this.id)"><span class="cellBorder">Experience</span></a>
+                    <a id="jumpContact" href="#contact" class="menu-location" onclick="jumpToSection(this.id)"><span >Contact</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+        <div id="home" class="mainHomeContainer">
+            <!--Banner Section-->
+            <div class="firstHeaderGroupContent">
+                <div class="nameWrapper">
+                    <h1>Nesh Patel</h1>
+                </div>
+                <div class="postWrapper">
+                    <h2>Digital Marketing Web Specialist / Web Developer</h2>
+                </div>
+                <div class="sentanceWrapper">
+                    <h3>I code beautifully and enjoy what I do.</h3>
+                </div>
+                <div class="bannerButtonWrapper">
+                    <div class="buttonBanner">
+                        <div>
+                            <a id="changeButton" title="I'm Here >"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Banner Image-->
+                <div class="homeImageWrapper">
+                    <div class="homeImageItem"><img src="images/backgrounds/profile-black-back.png" alt="Lady on laptop image imprinted on iphone cover"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!-- About Me -->
+        <div class="mainAboutContentRow">
+            <div class="mainAboutContentColumnOne">
+                <div class="mainAboutTextParaContent">
+                    <h2 id="about" class="menuHeaderTwo">About Me</h2>
+                    <p>Nesh Patel is an innovative and design-oriented front-end software Engineer. She strives to build immersive and beautiful web applications through carefully crafted code, user-centric design, and the best customer experience with accessibility
+                        for all.</p>
+                    <p>Nesh enjoys a good cultural conversation and she is enthusiastic about working with an agile team made of diverse backgrounds.</p>
+                    <!-- <hr> -->
+                    <p>When not online, Nesh can be found gardening new seeds, watering plants, trying out the latest recipes in the kitchen, or enjoying social events with family and friends.</p>
+                </div>
+            </div>
+            <div class="mainAboutContentColumnOne">
+                <div class="mainAboutImageContent">
+                    <img src="images/backgrounds/matrix-pc-image.jpg" alt="matrix movie inspired computer image with green codes flowing down from computer screen">
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Work-Output -->
+        <div class="servicesContainer">
+            <div class="flipPanelAboutMeWorkSkills">
+                <div class="flipPanelWrapper">
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flipPanelAboutMeWorkSkills">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/services/fliplogos/fast-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <div class="flip-card-back-content">
+                                            <h2>Fast</h2>
+                                            <ul class="flip-card-ul-list">
+                                                <li>Fast load times</li>
+                                                <li>Lag free user interaction</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/responsive-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Responsive</h2>
+                                        <p>Layouts work on any type of device</p>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Desktop</li>
+                                            <li>Laptop</li>
+                                            <li>Mobile</li>
+                                            <li>Tablet</li>
+                                            <li>E-readers</li>
+                                            <li>Printers</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/intuitive-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Intuitive</h2>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Intuitive Web Design and User Interface(UX/UI)</li>
+                                            <li>Easy to Navigate</li>
+                                            <li>Tell the Whole Story</li>
+                                            <li>Speedy and Reliable</li>
+                                            <li>Strong brand and Personality</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flipPanelWrapperKidt">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/services/fliplogos/dynamic-logo.png" alt="Avatar" style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="flip-card-back-content">
+                                        <h2>Dynamic</h2>
+                                        <ul class="flip-card-ul-list">
+                                            <li>Web-pages that are generated in real time</li>
+                                            <li>Provides custom content on trigger</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Technology Stack -->
+        <div class="techStackWrapper">
+            <div class="techStackItem techStackHeaderContainer">
+                <h2 class="techStackHeader">
+                    <span>
+                        <img src="./images/techStackUsed/tech-stack-mid.png" alt="stack of technology symbol in black color">
+                    </span>&nbsp;&nbsp;Technology Stack</h2>
+            </div>
+            <div class="techStackItem">
+                <div class="scene">
+                    <div class="carousel">
+                        <div class="carousel__cell" id="one">
+                            <div class="carousel-content">
+                                <h5>HTML</h5>
+                                <img src="./images/techStackUsed/html-icon.png" alt="hyper text markup language icon color in shades of blue and violet for html version 5" id="htmlFiveSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="two">
+                            <div class="carousel-content">
+                                <h5>CSS</h5>
+                                <img src="./images/techStackUsed/css-icon.png" alt="cascaded style sheets icon in blue for css version 3" id="cssSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="three">
+                            <div class="carousel-content">
+                                <h5>JavaScript</h5>
+                                <img src="./images/techStackUsed/js-icon.png" alt="javascript programming language icon in yellow background and black text" id="javascriptSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="four">
+                            <div class="carousel-content">
+                                <h5>React</h5>
+                                <img src="./images/techStackUsed/react-icon.png" alt="react software technology icon in skyblue shade color" id="reactSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="five">
+                            <div class="carousel-content">
+                                <h5>Atlassian</h5>
+                                <img src="./images/techStackUsed/atlassian-icon.png" alt="atlassian cloud technology icon in blue shade color" id="atlassianSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="six">
+                            <div class="carousel-content">
+                                <h5>jQuery</h5>
+                                <img src="./images/techStackUsed/jquery-icon.png" alt="jQuery software technology icon in red shade color" id="jQuerySource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="seven">
+                            <div class="carousel-content">
+                                <h5>PostgreSQL</h5>
+                                <img src="./images/techStackUsed/postgresql-icon.png" alt="PostgreSQL database software technology icon with symbol of blue colored elephant with two tusks" id="postgreSQLSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="eight">
+                            <div class="carousel-content">
+                                <h5>Adobe <br> Photoshop</h5>
+                                <img src="./images/techStackUsed/adobe-photoshop-icon.png" alt="adobe photoshop technology icon with skyblue color border, blue colored background and White colored text" id="adobePhotoshopSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="nine">
+                            <div class="carousel-content">
+                                <h5>Node.js</h5>
+                                <img src="./images/techStackUsed/nodejs-icon.png" alt="Node.js technology icon with grey and green colored fonts" id="nodeJSSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="ten">
+                            <div class="carousel-content">
+                                <h5>InVision</h5>
+                                <img src="./images/techStackUsed/Invision-icon.png" alt="Invision cloud software technology icon with purple color text and border" id="invisionSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="eleven">
+                            <div class="carousel-content">
+                                <h5>AngularJS</h5>
+                                <img src="./images/techStackUsed/angularjs-icon.png" alt="angularJs framework icon with Red background of Shield and White shade colors of text" id="angularJSSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="twelve">
+                            <div class="carousel-content">
+                                <h5>WordPress</h5>
+                                <img src="./images/techStackUsed/wordpress-icon.png" alt="wordpress software content technology icon with blue shades" id="wordpressSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="thirteen">
+                            <div class="carousel-content">
+                                <h5>Bootstrap</h5>
+                                <img src="./images/techStackUsed/bootstrap-icon.png" alt="bootstrap css software technology icon with purple background and white colored fonts" id="bootstrapSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="fourteen">
+                            <div class="carousel-content">
+                                <h5>AWS</h5>
+                                <img src="./images/techStackUsed/amazon-web-services-icon.png" alt="amazon web services cloud technology platform icon with aws written in dark black color with underline made of yellow colored arrow" id="awsSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                        <div class="carousel__cell" id="fifteen">
+                            <div class="carousel-content">
+                                <h5>More</h5>
+                                <img src="./images/techStackUsed/more-icon.png" alt="three dots more icon with blue shade color" id="moreSource" onclick="goToWebLink(this.id);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="carousel-access-button-container" style="text-align: center;">
+
+                    <button class="previous-button previous round">&#8249;&nbsp;Previous</button>
+                    <button class="next-button next round">&nbsp;&nbsp;Next&nbsp;&#8250;&nbsp;&nbsp;&nbsp;</button>
+                </p>
+            </div>
+            <div class="techStackItem techStackHeaderContainer">
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!-- Free Space -->
+        <div class="middleBlankSpace"></div>
+
+        <!--About Me- Services -->
+        <div class="profServicesWrapper">
+            <div class="profServicesItem">
+                <div class="techStackItem techStackHeaderContainer">
+                    <h2 class="techStackHeader">
+                        <span>
+                            <img src="./images/profServices/prof-services-icon.png" alt="icon of services made of two mechanical rings in blue shade colors ">
+                        </span>&nbsp;&nbsp;Services</h2>
+                </div>
+                <div class="devicesImageContainer">
+                    <div class="devicesImageItem">
+                        <img src="./images/profServices/responsive-design-part-1.jpg" alt="desktop and laptop responsive layout image with 1024+ size markup">
+                    </div>
+                    <div class="devicesImageItem">
+                        <img src="./images/profServices/responsive-design-part-2.jpg" alt="tablets and mobiles responsive layout image with 1023 to 768 and 767 to 320 size markup">
+                    </div>
+                </div>
+                <div class="profServicesListHeaderContainer">
+                    <div class="profServicesListHeaderItem">
+                        <h5>Hire a Web Developer/Front-End Software Engineer/Software Engineer</h5>
+                    </div>
+                </div>
+                <div class="profServicesListBulletContainer">
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Web Development</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webDevButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebDevContent">
+                            <div class="profServicesListDetails">
+                                <div>Website Development
+                                    <ul>
+                                        <li>Responsive</li>
+                                        <li>Adaptive</li>
+                                        <li>Mobile-First</li>
+                                        <li>Desktop-First</li>
+                                    </ul>
+                                </div>
+                                <div>Web Application Development</div>
+                                <div>Custom Websites</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Wordpress development</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="wordpressDevButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWordpressDevContent">
+                            <div class="profServicesListDetails">
+                                <div>WordPress Website Development</div>
+                                <div>WordPress Website Maintenance</div>
+                                <div>WordPress Theme Customization</div>
+                                <div>WordPress Security</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Website Support and Maintenance Services</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webSupportButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebSupportContent">
+                            <div class="profServicesListDetails">
+                                <div>Website Maintenance</div>
+                                <div>Website Update Services</div>
+                                <div>Website Upgrade Services</div>
+                                <div>Fix Slow Websites</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Website Management</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webManageButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebManageContent">
+                            <div class="profServicesListDetails">
+                                <div> Website Management Services</div>
+                                <div> Website Consulting</div>
+                                <div> Web Hosting Services Selection</div>
+                                <div> Rent a Website</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Web Design & Re-Design</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="webDesignButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer">
+                            <hr class="profServHrTag">
+                        </div>
+                        <div id="showWebDesignContent">
+                            <div class="profServicesListDetails">
+                                <div>Manufacturing/Industrial</div>
+                                <div>Ecommerce / Retail</div>
+                                <div>Technology</div>
+                                <div>Education</div>
+                                <div>Real-Estate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profServicesListBulletItem">
+                        <div class="mainTable">
+                            <div class="leftAlign">
+                                <h6>Performance, SEO(Search Engine Optimization) & Accessibility Testing</h6>
+                            </div>
+                            <div class="rightAlign">
+                                <a id="perfSeoButton" onclick="openServiceDetails(this.id);"><img src="./images/profServices/icon-plus-click-button.png" alt="icon of plus button in white color and black background to see additional content hidden"></a>
+                            </div>
+                        </div>
+                        <div class="profServHrTagContainer ">
+                            <hr class="profServHrTag ">
+                        </div>
+                        <div id="showPerfSeoContent">
+                            <div class="profServicesListDetails ">
+                                <div>Enhance performance and SEO for websites</div>
+                                <ul>
+                                    <li>Improve performance using GTMetrix <br>and Lighthouse reports</li>
+                                    <li>On-Site SEO from the title tag,<br> meta descriptions look in search results,<br> internal links, bolded text, header tags and many more</li>
+                                    <li>WordPress SEO Tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Project Section-->
+    <section>
+        <div class="projectSectionWrapper">
+            <div class="projectSectionKidt">
+                <div class="project-Title">
+                    <h2 id="projects" class="menuHeaderTwo">Projects</h2>
+                </div>
+            </div>
+            <div class="projectSectionKidt">
+                <div class="projectSubSectionDetailsWrapper">
+                    <div class="projectSubSectionDetailsWrapperKidt">
+                        <div class="projectSubSectionDetailsImageContainer">
+                            <div class="projectSubSectionDetailsImageItem">
+                                <img src="images/projects/newHomeWorkmate.png" alt="project1 image of laptop keyboard showing up">
+                            </div>
+                        </div>
+                        <div class="projectAppTitle">
+                            <h6 class="headerProject">New Home Workmate</h6>
+                        </div>
+                        <div class="projectAppDesc">
+
+                            <p class="projectAppDescDetails">Help new home buyers by providing information about nearby home upgrade/repair services available</p>
+                        </div>
+                        <div class="projectAppTechStackTitle">
+                            <p>Application Technology Stack</p>
+                        </div>
+                        <div class="splControlWidth">
+                            <div class="marquee">
+                                <ul class="marquee-content">
+                                    <li class="tooltip"><span class="tooltiptext">HTML5</span><i class="fab fa-html5" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">CSS3</span><i class="fab fa-css3" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">JavaScript</span><i class="fab fa-js"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">GitHub</span><i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">codepen</span><i class="fab fa-codepen"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="codeRepoContainer">
+                            <p><strong>Code Repository</strong></p>
+                            <p class="codeRepoGitLink"><a href="https://github.com/neshdev999/newHomeWorkMate"><i class="fab fa-github fa-lg fa-3x "></i></a></p>
+                        </div>
+                        <div class="projectWebAppLiveContainer">
+                            <p><strong>Web Link</strong></p>
+                            <p class="projectWebAppLiveLink"><a href="https://neshdev999.github.io/newHomeWorkMate/."><i class="fas fa-link fa-lg fa-3x"></i></a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="projectSubSectionDetailsWrapperKidt">
+                        <div class="projectSubSectionDetailsImageContainer">
+                            <div class="projectSubSectionDetailsImageItem">
+                                <img src="images/projects/updated/lokaidea.png" alt="loka idea llc website snap shot with rendering">
+                            </div>
+                        </div>
+                        <div class="projectAppTitle">
+                            <h6 class="headerProject">Enterprise Website</h6>
+                        </div>
+                        <div class="projectAppDesc">
+                            <p class="projectAppDescDetails">Client Enterprise Website: Loka Idea LLC, Augmented reality and 3D Rendering Services Provider</p>
+                        </div>
+                        <div class="projectAppTechStackTitle">
+                            <p>Application Technology Stack</p>
+                        </div>
+                        <div class="splControlWidth">
+                            <div class="marquee">
+                                <ul class="marquee-content">
+                                    <li class="tooltip"><span class="tooltiptext">HTML5</span><i class="fab fa-html5" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">CSS3</span><i class="fab fa-css3" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">JavaScript</span><i class="fab fa-js"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">GitHub</span><i class="fab fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">codepen</span><i class="fab fa-codepen"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">React</span><i class="fab fa-react"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                    <li class="tooltip"><span class="tooltiptext">Node.js</span><i class="fab fa-node"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="codeRepoContainer">
+                            <p><strong>Code Repository</strong></p>
+                            <p class="codeRepoGitLink"><a href="https://www.lokaidea.com/"><i class="fab fa-github fa-lg fa-3x "></i></a></p>
+                        </div>
+                        <div class="projectWebAppLiveContainer">
+                            <p><strong>Web Link</strong></p>
+                            <p class="projectWebAppLiveLink"><a href="https://www.lokaidea.com/"><i class="fas fa-link fa-lg fa-3x"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Experience Section-->
+    <section>
+        <div class="experienceSectionWrapper">
+            <div class="experienceSectionKidt">
+                <div class="experienceHeaderContainer">
+                    <div class="experienceHeader">
+                        <h2 id="experience" class="menuHeaderTwo experience-Title">Experience</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="experienceSectionKidt">
+                <!-- <div class="testingPlease"> -->
+                <ul class="experienceCompanyLogoUlList">
+                    <li class="setLogoList">
+                        <a id="secondSubExpContainerButton" class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Loka');"><img src="images/experience-logo/loka_idea_logo.png" alt="Loka Idea LLC Company logo with vibrant colors"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Vanguard');"><img src="images/experience-logo/vanguard-logo.png" alt="Vanguard company logo with dark red color"></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'DEV');"><img src="images/experience-logo/internship-logo/dev-it-logo.png" alt="Dev It Limited LLC company logo with green arrows merging "></a>
+                    </li>
+                    <li class="setLogoList">
+                        <a class="experienceCompanyLogoLinks hvr-push" href="javascript:void(0);" onclick="showCurrentExpFunction(event,'Wipro');"><img src="images/experience-logo/internship-logo/wipro-logo.png" alt="Wipro company logo with doted circles of shaded colors"></a>
+                    </li>
+                </ul>
+                <!-- Loka content-->
+                <div id="Loka" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">More Info</h6>
+                    </div>
+                    <!--Ribbon Loka-->
+                    <div class="ribbonNav">
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.lokaidea.com/">
+                                <span class="fa fa-link"></span>
+                        <span>Website</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/4nkdDkBeTbaxaPnHA">
+                                <span class="fas fa-location-arrow"></span>
+                        <span>Location</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.lokaidea.com/wp-content/uploads/2020/08/augmented_reality_promo.mp4">
+                                <span class="fas fa-vr-cardboard"></span>
+                        <span>Dive</span>
+                        </a>
+                        </span>
+                    </div>
+                    <!--Ribbon Loka ends-->
+                    <br>
+                </div>
+                <!-- Vanguard content-->
+                <div id="Vanguard" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">More Info</h6>
+                    </div>
+                    <!--Ribbon Vanguard-->
+                    <div class="ribbonNav">
+                        <span class="currentCompanyMenu">
+                            <a href="https://investor.vanguard.com/corporate-portal/">
+                                <span class="fa fa-link"></span>
+                        <span>Website</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/4nkdDkBeTbaxaPnHA">
+                                <span class="fas fa-location-arrow"></span>
+                        <span>Location</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="http://vanguard.vo.llnwd.net/o1/EXT/IIG/pct-video.mp4">
+                                <span class="fas fa-vr-cardboard"></span>
+                        <span>Dive</span>
+                        </a>
+                        </span>
+                    </div>
+                    <!--Ribbon Vanguard ends-->
+                    <br>
+                </div>
+                <!-- DEV content-->
+                <div id="DEV" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Internship</h6>
+                    </div>
+                    <!-- Ribbon DEV -->
+                    <div class="ribbonNav">
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.devitpl.com/">
+                                <span class="fa fa-link"></span>
+                        <span>Website</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/Nnz9GZ1c1U1Yw6t8A">
+                                <span class="fas fa-location-arrow"></span>
+                        <span>Location</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.devitpl.com/dev-labs/">
+                                <span class="fas fa-vr-cardboard"></span>
+                        <span>Dive</span>
+                        </a>
+                        </span>
+                    </div>
+                    <!-- Ribbon DEV ends-->
+                    <br>
+                </div>
+                <!-- Wipro content-->
+                <div id="Wipro" class="currentCompanyContent">
+                    <div class="experienceSubTitleContainer">
+                        <h6 class="experienceSubTitleHeading">Internship</h6>
+                    </div>
+                    <!-- Ribbon Wipro -->
+                    <div class="ribbonNav">
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.wipro.com/">
+                                <span class="fa fa-link"></span>
+                        <span>Website</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://goo.gl/maps/RErcJL5qpFmKLYYn6">
+                                <span class="fas fa-location-arrow"></span>
+                        <span>Location</span>
+                        </a>
+                        </span>
+                        <span class="currentCompanyMenu">
+                            <a href="https://www.wipro.com/infrastructure/devops/">
+                                <span class="fas fa-vr-cardboard"></span>
+                        <span>Dive</span>
+                        </a>
+                        </span>
+                    </div>
+                    <!-- Ribbon Wipro ends-->
+                    <br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!-- Contact Section-->
+
+    <article>
+        <div class="contactSectionContainer">
+            <div class="contactSectionKidt">
+                <div class="contact-Title">
+                    <h2 id="contact" class="menuHeaderTwo">Contact</h2>
+                </div>
+
+            </div>
+            <div class="backImageContainer">
+                <div class="formContainer">
+                    <form action="https://formspree.io/f/xgepojyk" method="POST">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" class="firstNameInputBoxContact" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" class="lastNameInputBoxContact" required>
+                        <input type="email" id="emailId" name="emailId" placeholder="Enter your email please" class="emailInputBoxContact" required>
+                        <textarea name="message" placeholder="Have a question or want to work together? Type your message here." class="messageInputBoxContact" required></textarea>
+                        <button type="submit" class="sendButtonInputBoxContact">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Free Space -->
+    <div class="middleBlankSpace"></div>
+
+    <!--Content Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-left">
+            <div class="footer-name">
+                <h3 class="footerHead">Nesh <span>Patel</span></h3>
+            </div>
+            <p class="footer-links">
+                <a href="#home">Introduction</a><span>&nbsp;&nbsp;</span>
+                <a href="#about">About</a><span>&nbsp;&nbsp;</span>
+                <a href="#projects">Projects</a><span>&nbsp;&nbsp;</span>
+                <a href="#experience">Experience</a><span>&nbsp;&nbsp;</span>
+                <a href="#contact">Contact</a>
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-center-kidt">
+                <p><a href="https://goo.gl/maps/JaFYaRLik1NM8PGSA"><i class="fa fa-map-marker"></i></a></p>
+                <p><span>Charlotte, NC, USA.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+            </div>
+            <div class="footer-center-kidt">
+                <p><a href="mailto:support@company.com?subject=I%20want%20to%20connect%20with%20you"><i class="fa fa-envelope"></i></a></p>
+                <p><a href="mailto:support@company.com?subject=I%20want%20to%20connect%20with%20you"><span>contactnesh61@gmail.com</span></a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Connect @ Nesh</span>
+            </p>
+            <div class="footer-icons">
+                <a href="https://github.com/neshdev999" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="splCopyRightYear">
+            <p class="footer-company-name">nesh &copy; <span id="copyRightYear"></span></p>
+        </div>
+    </footer>
+
+    <!-- Custom Dilog box -->
+
+    <div id="dialogbox">
+        <div class="dialogboxContainer">
+            <div id="dialogboxhead"></div>
+            <div class="centeredPrompt">
+                <div class="centeredPrompt__item centeredPromptIcon">
+                    <div class="icon fa fa-smile-o"></div>
+                </div>
+                <div class="centeredPrompt__item centeredPromptLabel">Welcome to the Real World!</div>
+                <div class="centeredPrompt__item centeredPromptDetails">Thanks for visiting here. More items will be added. </div>
+                <div class="centeredPrompt__item button" id="dilogSplButton"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Javascript Files-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
